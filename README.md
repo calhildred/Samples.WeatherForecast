@@ -12,12 +12,19 @@ Issues :
 
 ## Steps 2
 
-Followed steps as listed and encounter no issues until I tried to send a postman request. Definitely more reading and thinking (and googling) than writing in this section
+Followed steps as listed and encountered no issues until I tried to send a postman request. Definitely more reading and thinking (and googling) than writing in this section
 
 Issues :
 1. Was unable to successfully send a postman get request: As covered in the read-me's of https://github.com/johannesprinz/Samples.WeatherForecast and https://github.com/henrymrrtt67/Sample.WeatherForecast, it seems like we were exposing the 8080 port in the dockerfile but that was not not the actual port we were sitting in (which was 80, as it seems that is the default). By adding ENV ASPNETCORE_URLS=http://+:8080 to the docker file we are able to make sure the exposed port is the same as the url the api is listening on
+
 Before:
+
 ![](2021-06-05-20-42-48.png)
 
 After:
+
 ![](2021-06-05-20-43-12.png)
+
+## Steps 3
+
+Followed steps as listed and encountered no big issues. Only thing to take note of is I enabled improved container support (User Icon -> Feature Preview), not really sure if it helped but it can't hurt right? Also had the permissions issues when trying to pull the docker image, but the steps cover how to solve that
