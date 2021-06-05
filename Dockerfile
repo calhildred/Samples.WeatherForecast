@@ -2,13 +2,13 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 EXPOSE 80
 
-ENV ASPNETCORE_URLS=http://+:80
-
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /app
 COPY . .
 
-RUN dotnet restore "src/Samples.WeatherForecast.Api/Samples.WeatherForecast.Api.csproj"
+WORKDIR /app/src/Samples.WeatherForecast.Api
+
+RUN dotnet restore "Samples.WeatherForecast.Api.csproj"
 
 RUN dotnet build "Samples.WeatherForecast.Api.csproj" -c Release -o /app/build --no-restore
 
