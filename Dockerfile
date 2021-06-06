@@ -29,7 +29,11 @@ RUN addgroup -g 1000 dotnet && \
 WORKDIR /app
 COPY --chown=dotnet:dotnet --from=publish /out .
 
-USER dotnet
 ENV ASPNETCORE_URLS=http://+:8080
+
+HEALTHCHECK --interval=60s --timeout=3s --retries=3 \
+    CMD wget localhost:8080/health -q -O - > /dev/null 2>&1
+
+USER dotnet
 EXPOSE 8080
 ENTRYPOINT ["./Samples.WeatherForecast.Api"]

@@ -35,3 +35,9 @@ Followed steps as listed and only encountered one issue, due to a type in the st
 
 Issues :
 1. Got the following error while building docker image - 'unable to convert uid/gid chown string to host mapping: can't find gid for group dotnetgroup: no such group: dotnetgroup'. Fixed by using the correct code (use COPY --chown=dotnet:dotnet --from=publish /out . not COPY --chown=dotnet:dotnetgroup --from=publish /out .)
+
+## Step 5
+
+Followed steps as listed and encounter no issues
+
+Set up basic health checks in the dockerfile and the Startup file
