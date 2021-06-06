@@ -10,7 +10,7 @@ Issues :
 2. Was unable to build the docker file from the root folder. Turns out that docker actually has to be running, so I opened the Docker Desktop app and tried again
 3. Was unable to successfully send a postman get request. Make sure to send it to http instead of https (I guess there is some set up required for https to work, porbably authentication?)
 
-## Steps 2
+## Step 2
 
 Followed steps as listed and encountered no issues until I tried to send a postman request. Definitely more reading and thinking (and googling) than writing in this section
 
@@ -25,6 +25,13 @@ After:
 
 ![](2021-06-05-20-43-12.png)
 
-## Steps 3
+## Step 3
 
 Followed steps as listed and encountered no big issues. Only thing to take note of is I enabled improved container support (User Icon -> Feature Preview), not really sure if it helped but it can't hurt right? Also had the permissions issues when trying to pull the docker image, but the steps cover how to solve that
+
+## Step 4
+
+Followed steps as listed and only encountered one issue, due to a type in the steps.
+
+Issues :
+1. Got the following error while building docker image - 'unable to convert uid/gid chown string to host mapping: can't find gid for group dotnetgroup: no such group: dotnetgroup'. Fixed by using the correct code (use COPY --chown=dotnet:dotnet --from=publish /out . not COPY --chown=dotnet:dotnetgroup --from=publish /out .)
