@@ -41,3 +41,13 @@ Issues :
 Followed steps as listed and encounter no issues
 
 Set up basic health checks in the dockerfile and the Startup file
+
+## Step 6
+
+Followed steps as listed, but had some issues. No issues when it came to setting up the unit test aspects of the docker file, but my issuse came with adapting the current commands so that you could still create a docker image for the api. 
+
+![](2021-06-12-18-54-09.png)
+
+This line suggested to me to remove all current code in the dockerfile, and to start replacing the code with the code from the future sections. The issue is the future sections outlined how to correctly add the new unit testing code, but it didnt mention not to remove the current code or how to adapt the current code to be usable now that we have added the unit testing code. After a bit of confusion on how to get the two sections to work to together, I ending up having to go to the ready-made section 6 repository and copy from that docker file.
+
+
