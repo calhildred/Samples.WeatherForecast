@@ -1,4 +1,6 @@
 # Samples.WeatherForecast
+[![codecov](https://codecov.io/gh/calhildred/Samples.WeatherForecast/branch/main/graph/badge.svg?token=SQJX3GFW1N)](https://codecov.io/gh/calhildred/Samples.WeatherForecast)
+
 https://dev.to/newday-technology/api-s-from-dev-to-production-428i 
 
 ## Step 1
