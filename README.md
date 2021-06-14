@@ -52,4 +52,10 @@ Followed steps as listed, but had some issues. No issues when it came to setting
 
 This line suggested to me to remove all current code in the dockerfile, and to start replacing the code with the code from the future sections. The issue is the future sections outlined how to correctly add the new unit testing code, but it didnt mention not to remove the current code or how to adapt the current code to be usable now that we have added the unit testing code. After a bit of confusion on how to get the two sections to work to together, I ending up having to go to the ready-made section 6 repository and copy from that docker file.
 
+## Step 7
+
+In this step we added code coverage to our repository using coverlet and codecov
+
+Did not have any issues with this step, just followed the steps. 
+
 
