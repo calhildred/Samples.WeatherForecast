@@ -70,3 +70,14 @@ In this step we added a new CI step to allow us to check test coverage for pull 
 
 Did not have any issues with this step, just followed the steps. 
 
+## Step 9 
+
+In this step we added Code Climate to add Static code analysis to our respository. As a note I did not have to add code climate into my github branch rules, it was just done automatically
+
+Did not have any issues with this step, just followed the steps.
+
+## Step 10
+
+In this step we added code ql to add static security testing to our repo
+
+Did not have any issues with this step, just followed the steps. 
