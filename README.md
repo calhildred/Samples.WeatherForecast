@@ -58,4 +58,15 @@ In this step we added code coverage to our repository using coverlet and codecov
 
 Did not have any issues with this step, just followed the steps. 
 
+## Step 7
+
+In this step we added code coverage to our repository using coverlet and codecov
+
+Did not have any issues with this step, just followed the steps. 
+
+## Step 8
+
+In this step we added a new CI step to allow us to check test coverage for pull requests
+
+Did not have any issues with this step, just followed the steps. 
 
